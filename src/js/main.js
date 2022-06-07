@@ -1,9 +1,8 @@
-let popupEl = document.getElementById("popup");
-let clickCountEl = document.getElementById("click-count");
+let popupEl       = document.getElementById("popup");
+let clickCountEl  = document.getElementById("click-count");
 let resetButtonEl = document.getElementById("reset");
 
 let clicks = localStorage.getItem("clicks") | 0;
-
 
 function show (elm) {
     elm.classList.remove("hidden");
@@ -36,6 +35,6 @@ function updatePopup() {
 
 function resetClicks() {
     localStorage.removeItem("clicks");
-    clicks=0;
+    clicks = 0;
     updatePopup();
 }
