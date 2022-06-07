@@ -3,6 +3,7 @@ $primary: #E4C1AE;
 
 body {
     font-family: "Roboto";
+    margin: 0;
 }
 
 .container {
@@ -59,3 +60,55 @@ body {
     height: 330px;
 }
 
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $fg;
+        opacity: 0.5;
+        z-index: 1;
+    }
+    .content {
+        background-color: white;
+        z-index: 2;
+        padding: 56px 95px;
+        position: relative;
+        width: 920px;
+        .close {
+            position: absolute;
+            top: 48px;
+            right: 48px;
+            width: 24px;
+            height: 24px;
+            background: url("/images/x-icon.svg");
+            border: none;
+            transition: opacity 100ms;
+            &:hover {
+                opacity: 0.3;
+            }
+        }
+        h2 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 120%;
+        }
+        p {
+            margin: 24px 0 0 0;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
