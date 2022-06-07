@@ -41,27 +41,27 @@ body {
             line-height: 24px;
             margin: 0;
         }
-        button {
-            padding: 16px 40px;
-            border-radius: 24px;
-            font-size: 16px;
-            line-height: 16px;
-            background-color: $primary;
-            color: white;
-            font-weight: 700;
-            border: none;
-            margin-top: 32px;
-            transition: background-color 200ms;
-            &:hover {
-                background-color: darken($primary, 5%);
-            }
-            &:focus {
-                background-color: lighten($primary, 5%);
-            }
-        }
     }
 }
 
+.button {
+    padding: 16px 40px;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: $primary;
+    color: white;
+    font-weight: 700;
+    border: none;
+    margin-top: 32px;
+    transition: background-color 200ms;
+    &:hover {
+        background-color: darken($primary, 5%);
+    }
+    &:focus {
+        background-color: lighten($primary, 5%);
+    }
+}
 
 .modal {
     position: fixed;
