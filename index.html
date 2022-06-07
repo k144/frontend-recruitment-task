@@ -9,13 +9,13 @@
 </head>
 <body>
 
-    <div class="modal hide">
+    <div class="modal hidden" id="popup">
         <div class="content">
-            <button class="close"></button>
+            <button onclick="closePopup()" class="close"></button>
             <h2>Alert!</h2>
-            <p>You have clicked <b>X times</b> to related button.</p>
+            <p>You have clicked <b><span id="click-count">X</span> times</b> to related button.</p>
         </div>
-        <div class="bg"></div>
+        <div onclick="closePopup()" class="bg"></div>
     </div>
 
 
@@ -27,9 +27,10 @@
             <div class="content">
                 <h2>Lorem Ipsum</h2>
                 <p>Infinitely scalable, feature-rich and cloud-native data management and protection for modern and legacy infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
-                <button>Button</button>
+                <button onclick="openPopup()">Button</button>
             </div>
         </div>
     </div>
 
+    <script src="dist/all.js"></script>
 </body>
